@@ -5,11 +5,22 @@
     <link rel="icon" href="./src/assets/warehouse.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="An application that provides a warehouse inventory service. The application contains two main pages. Item information is added and then displayed in the warehouse card in the form of cards, with the ability to modify and filter the cards without the need to add them again." />
+    <!-- Verify Google search console -->
     <meta name="google-site-verification"  content="<%- googleSiteVerification %>"  />
     <title>Warehouse inventory</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Verify Google analytics -->
+     <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXFHQPRMMN"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', process.env.VITE_GOOGLE_ANALYTICS);
+      </script>
   </body>
 </html>
